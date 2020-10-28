@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +27,11 @@ Route::get('/', function () {
 */
 
 // 練習 1-6 修改 Route載入的頁面路徑
+/*
 Route::get('home', function (){
     return view('home.index');
 });
+*/
+//練習 1-8 改用 HomeController回傳
+Route::get('/',[HomeController::class,'index']);
+
