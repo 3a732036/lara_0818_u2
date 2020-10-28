@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// 練習 1-2 設定從 /routes/web.php回傳 index.php
+// 練習 1-2 設定從 /routes/web.php回傳 index.blade.php
 /*
  * Route::get('home', function (){
     return view('home');
