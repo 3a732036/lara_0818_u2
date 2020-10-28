@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 練習 1-2 設定從 /routes/web.php回傳 home.html
+Route::get('home', function (){
+    return view('home');
+});
